@@ -1,0 +1,2 @@
+git push github master
+-Wall -Wsign-compare -Wwrite-strings -Wtype-limits -Werror
