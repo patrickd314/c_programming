@@ -12,7 +12,7 @@ int prime_correct(int a){
   */
 
   char command[100];  
-  a = 42;  
+  // a = 42;  
   sprintf(command, "./isPrime-correct %d", a);  
   int s = system(command);
   printf("%d", s);
