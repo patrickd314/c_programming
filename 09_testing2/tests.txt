@@ -1,0 +1,43 @@
+aaaaa bbbbb
+aaaaa bbbbc
+aaabb bbbbc
+      aaaaa
+aaaaa
+a     aaaaa
+aa    aaaaa
+aaa   aaaaa
+aaaa  aaaaa
+aaaaa a
+aaaaa aa
+aaaaa aaa
+aaaaa aaaa
+ aaaa aaaaa
+  aaa aaaaa
+   aa aaaaa
+    a aaaaa
+aaaaa  aaaa
+aaaaa   aaa
+aaaaa    aa
+aaaaa     a
+
+aa aa aaaaa
+aaaaaa aaaaa
+aaaaa aaaaaa
+aaaaaa aaaaaa
+'\n''\n''\n''\n''\n' '\n''\n''\n''\n''\n'
+ࢢࢢࢢࢢࢢ ࢢࢢࢢࢢࢢ
+abbba ccvva
+abbbb cdddd
+abbbb cacac
+ababb cacac
+bbaaa cbbbb
+abcde fghij
+aaaaa aaaaa
+abcdefghijk
+!!!!! 12345
+
+
+
+
+
+
