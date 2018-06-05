@@ -159,6 +159,6 @@ card_t card_from_num(unsigned c) {
   temp.suit = c/13;  
   temp.value = (c % 13)+2;
   //printf("suit = %d  value = %d \n ", temp.suit, temp.value);
- 
+  assert_card_valid(temp);
   return temp;
 }
