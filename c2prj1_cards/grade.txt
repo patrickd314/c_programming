@@ -1,0 +1,6 @@
+Grading at Tue Jun  5 21:07:12 UTC 2018
+Compiling cards.c
+Testing card_from_letters
+Failed
+
+Overall Grade: FAILED
