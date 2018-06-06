@@ -5,10 +5,12 @@
 
 
 void assert_card_valid(card_t c) {
-  //printf("card val %d card suit %d\n", c.value, c.suit);
+  //  printf("card val %d card suit %d  ", c.value, c.suit);
   int val = (2 <= c.value) && (c.value <= VALUE_ACE);
   int st = (SPADES <= c.suit) && (c.suit <= CLUBS);
-  //printf("val %d  st %d\n", val, st);
+  //if(!(val && st)){printf("Assert failure!");}
+  //else{printf("assert passed!");}
+  
     assert( val && st);      
 }
 
@@ -105,15 +107,12 @@ void print_card(card_t c) {
 card_t card_from_letters(char value_let, char suit_let) {
    int  value_int = value_let - 48;
    card_t temp;
-   if (2 <= value_int && value_int <=9){
+   if (2 <= value_int && value_int <= 9){
      temp.value = value_int;
    }
-   else if(value_int != 0){temp.value = 24;}
+   else if(value_int == 0){temp.value = 10;}
    else{ // assuming val_int == 0 now    
-     switch (value_int){
-       case 0:
-	 temp.value = 10;
-	 break;
+     switch (value_let){
        case 'J':
 	 temp.value = 11;
 	 break;

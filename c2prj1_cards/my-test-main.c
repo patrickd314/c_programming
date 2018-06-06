@@ -5,18 +5,19 @@
 
 
 int main(void) {
-card_t my_card = card_from_letters('7', 'h');
+card_t my_card = card_from_letters('J', 'h');
  
 print_card(my_card);
  printf("\n");
 
  
-
+ /*
  for(int i = 0; i < 52; i++){
    my_card = card_from_num(i);
    print_card(my_card);
    printf("\n");
    }
+ */
  //my_card = card_from_letters('%', 'h');
  //print_card(my_card);
  //printf("\n");
