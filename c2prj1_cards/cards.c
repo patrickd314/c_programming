@@ -15,37 +15,38 @@ void assert_card_valid(card_t c) {
 }
 
 const char * ranking_to_string(hand_ranking_t r) {
+  const char *out_str;
   switch(r){
      case  STRAIGHT_FLUSH:
-       printf("Straight flush");
+       out_str = "Straight flush";
        break;
      case  FOUR_OF_A_KIND:
-       printf("Four of a kind");
+       out_str = "Four of a kind";
        break;
      case  FULL_HOUSE:
-       printf("Full house");
+       out_str = "Full house";
        break;
      case  FLUSH:
-       printf("Flush");
+       out_str = "Flush";
        break;
      case  STRAIGHT:
-       printf("Straight");
+       out_str = "Straight";
        break;
      case  THREE_OF_A_KIND:
-       printf("Three of a kind");
+       out_str = "Three of a kind";
        break;
      case  TWO_PAIR:
-       printf("Two pair");
+       out_str = "Two pair";
        break;
      case PAIR:
-       printf("Pair");
+       out_str = "Pair";
        break;
      case  NOTHING:
-       printf("Nothing");
+       out_str = "Nothing";
        break;
   }
 
-  return "";
+  return out_str;
 }
 
 char value_letter(card_t c) {
