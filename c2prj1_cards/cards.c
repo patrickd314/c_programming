@@ -18,31 +18,31 @@ const char * ranking_to_string(hand_ranking_t r) {
   const char *out_str;
   switch(r){
      case  STRAIGHT_FLUSH:
-       out_str = "Straight flush";
+       out_str = "STRAIGHT_FLUSH";
        break;
      case  FOUR_OF_A_KIND:
-       out_str = "Four of a kind";
+       out_str = "FOUR_OF_A_KIND";
        break;
      case  FULL_HOUSE:
-       out_str = "Full house";
+       out_str = "FULL_HOUSE";
        break;
      case  FLUSH:
-       out_str = "Flush";
+       out_str = "FLUSH";
        break;
      case  STRAIGHT:
-       out_str = "Straight";
+       out_str = "STRAIGHT";
        break;
      case  THREE_OF_A_KIND:
-       out_str = "Three of a kind";
+       out_str = "THREE_OF_A_KIND";
        break;
      case  TWO_PAIR:
-       out_str = "Two pair";
+       out_str = "TWO_PAIR";
        break;
      case PAIR:
-       out_str = "Pair";
+       out_str = "PAIR";
        break;
      case  NOTHING:
-       out_str = "Nothing";
+       out_str = "NOTHING";
        break;
   }
 
