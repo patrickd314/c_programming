@@ -1,8 +1,41 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// pointer method
+/*
 int * arrayMax(int * array, int n) {
-  return NULL;
+    if (n == 0){return NULL;}
+    int big_num = *array; // set var to 1st place in array
+    //printf("%d\n", big_num);
+    int *big_p = array;  // set pointer to same spot
+    int * p = big_p;  // initialize a pointer which we will vary
+    while(p < array + n){   // array + n will be 1 greater than final value
+        if( *p > big_num){
+            
+            big_num = *p;  // swap
+            big_p = p;
+        }
+    p += 1;  // move pointer p to next box
+    }
+  return big_p;
+}
+*/
+
+// index method
+
+int * arrayMax(int * array, int n) {
+  if (n == 0){return NULL;}
+  int big_num = array[0];
+  int big_i = 0;  
+  for (int i = 1;  i < n; i++){   
+    if( array[i] > big_num){
+      big_num = array[i];  // swap
+      big_i = i;
+    }
+  }
+  //int * big_p = &array[big_i];
+    
+  return &array[big_i];
 }
 
 void doTest(int * array, int n) {
@@ -15,7 +48,7 @@ void doTest(int * array, int n) {
     for (int i =0; i < n; i++) {
       printf("%d", array[i]);
       if (i < n -1) {
-	printf(", ");
+        printf(", ");
       }
     }
     printf("}");
