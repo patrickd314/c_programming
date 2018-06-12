@@ -5,10 +5,8 @@
 
 size_t maxSeq(int * array, size_t n){
   //printf("n = %d\n", n);
-  if((n == 0) || (n == 1)){return n;}
-    
-    
-  int long_seq = 0;
+  if((n == 0) || (n == 1)){return n;}    
+  
   int idx = 0;
   int this_seq = 1;
   int high_seq = 1;
