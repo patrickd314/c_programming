@@ -3,7 +3,8 @@
 #include <string.h>
 
 
-void reverse(char * str) {  
+void reverse(char * str) {
+  if(str == NULL){exit(EXIT_FAILURE);}
   int len = strlen(str);    
   char rev[len + 1];
   
@@ -22,6 +23,7 @@ void reverse(char * str) {
 }
 
 int main(void) {
+  
   char str0[] = "";
   char str1[] = "123";
   char str2[] = "abcd";
@@ -33,6 +35,12 @@ int main(void) {
   for (int i = 0; i < 7; i++) {
     reverse(array[i]);
     printf("%s\n", array[i]);
-  }
+    }
+
+  /*
+  char *s = NULL ;
+  reverse(s);
+  printf("%s\n", s);
+  */
   return EXIT_SUCCESS;
 }
