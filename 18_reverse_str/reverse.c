@@ -2,8 +2,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-void reverse(char * str) {
-  //WRITE ME!
+
+void reverse(char * str) {  
+  int len = strlen(str);    
+  char rev[len + 1];
+  
+  rev[len] = '\0';
+  
+  for(int i = 0; i < len ; i++){    
+    int j = len - 1 - i;    
+    rev[i] = str[j];    
+  }
+
+  for(int i = 0; i < len ; i ++){ 
+    str[i] = rev[i];
+  }
+  //strcpy(str, rev);  
+    
 }
 
 int main(void) {
